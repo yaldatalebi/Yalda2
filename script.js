@@ -40,6 +40,23 @@ function showTemp(response) {
   desc.innerHTML = ` ${descr} `;
   console.log(telorance);
   telorance.innerHTML = `${max}/${mini}℃`;
+  
+  if (descr === "Clouds") {
+    suny.innerHTML = "☁️";
+  }
+  if (descr === "Mist") {
+    suny.innerHTML = "🌫️";
+  }
+  if (descr === "Haze") {
+    suny.innerHTML = "🌫️";
+  }
+  if (descr === "Clear") {
+    suny.innerHTML = "☀️";
+  }
+  if (descr === "Rain") {
+    suny.innerHTML = "🌧️";
+  }
+
   //minmax.innerHTML= "Hi";
 }
 //${max}/${mini}℃
@@ -48,7 +65,7 @@ let currentemp = document.querySelector("#Ctemp");
 let desc = document.querySelector("#desc");
 let wind = document.querySelector("#wind");
 let humidity = document.querySelector("#humidity");
-
+let suny = document.querySelector("#sun");
 //let celc = document.querySelector("#celc");
 //celc.addEventListener("click", FtoC);
 //faren.addEventListener("click", CtoF);
