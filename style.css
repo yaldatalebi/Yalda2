@@ -9,7 +9,7 @@
         border-style: solid;
         border-width: 5px;
         margin: 50PX auto;
-        box-shadow: rgba(0, 0, 0, 0.094) 15px 15px 20px 10px;
+        box-shadow: rgba(0, 0, 0, 0.18) 15px 15px 20px 10px;
       }
       body{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -24,7 +24,14 @@
         padding: 9px 11px;
         margin: 0px 5px;
         }
-
+      .more{
+        margin-bottom: -10px;
+        color: #035fab;
+        font-size: small;
+      }
+      .link:hover{
+        color: rgb(255, 0, 0);
+      }
       .celc{
         border-radius: 1000px 0 0px 1000px;
         background-color: rgb(255, 202, 95);
@@ -132,7 +139,6 @@
           background-color: #FDFACF;
           padding: 33px 20px;
           min-width: 20px;
-          
         }
        .cards:hover{
         background-color: #fff388;
