@@ -40,22 +40,13 @@ function showTemp(response) {
   desc.innerHTML = ` ${descr} `;
   console.log(telorance);
   telorance.innerHTML = `${max}/${mini}℃`;
-
-  if (descr === "Clouds") {
-    suny.innerHTML = "☁️";
-  }
-  if (descr === "Mist") {
-    suny.innerHTML = "🌫️";
-  }
-  if (descr === "Haze") {
-    suny.innerHTML = "🌫️";
-  }
-  if (descr === "Clear") {
-    suny.innerHTML = "☀️";
-  }
-  if (descr === "Rain") {
-    suny.innerHTML = "🌧️";
-  }
+  let iconElement = document.querySelector("#sun");
+ 
+    iconElement.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+    iconElement.setAttribute("alt", response.data.weather[0].description);
 
   //minmax.innerHTML= "Hi";
 }
