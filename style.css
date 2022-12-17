@@ -17,6 +17,11 @@
         margin: 50PX auto;
         box-shadow: rgba(0, 0, 0, 0.18) 15px 15px 20px 10px;
       }
+      .Ctemp{
+        color: #5a6275;
+        font-size: 50px;
+        font-weight: 900;
+      }
       .btn-pluse{
         border-radius: 1000px;
         color:#42A5F5;
@@ -125,6 +130,26 @@
             margin-left: 10px;
 
         }
+        .CtoF{
+          font-size: 15px;
+          margin-left: 20px;
+          color: #f05d5d;
+          font-weight: 900;
+        }
+        .FtoC{
+          font-size: 16px;
+          margin-left: 5px;
+          color: #4a8fc7;
+          font-weight: 900;
+        }
+        .FtoC:hover{
+          color: #003d6f;
+          font-size: 19px;
+        }
+        .CtoF:hover{
+          color: #6f0000;
+          font-size: 19px;
+        }
         .temp2{
             font-size: 13px;
             color: red;
@@ -154,8 +179,7 @@
         }
 
       h1 {
-        color: #5a6275;
-        font-size: 50px;
+        
         }
       h3{
         font-size: 17px;

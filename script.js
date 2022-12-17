@@ -24,7 +24,8 @@ button.addEventListener("click", search);
 function showTemp(response) {
   console.log(response);
   let tempo = Math.round(response.data.main.temp);
-  currentemp.innerHTML = `🌡️${tempo}℃`;
+  celsius = response.data.main.temp;
+  currentemp.innerHTML = `🌡️${tempo} ℃`;
   let newCity = response.data.name;
   let country = response.data.sys.country;
   document.querySelector("#CCity").innerHTML = `📍  ${newCity} / ${country}`;
@@ -32,6 +33,7 @@ function showTemp(response) {
   console.log(mini);
   let max = Math.round(response.data.main.temp_max);
   console.log(max);
+  
   let descr = response.data.weather[0].main;
   let windi = response.data.wind.speed;
   let hum = response.data.main.humidity;
@@ -157,3 +159,24 @@ function getcurrent(event) {
 let btnlocation = document.querySelector("#currentbtn");
 btnlocation.addEventListener("click", getcurrent);
 searchcity("Tehran");
+
+function showfahrenheit(event){ 
+  event.preventDefault();
+  let temp = document.querySelector("#Ctemp");
+  let fahrenheit = (celsius * 9) / 5 + 52;
+  temp.innerHTML = `🌡️${Math.round(fahrenheit)} ℉`;
+}
+let celsius = null;
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showfahrenheit);
+
+function showcelcius(event) {
+  event.preventDefault();
+  let temp = document.querySelector("#Ctemp");
+  temp.innerHTML = `🌡️${Math.round(celsius)} ℃`;
+}
+let celc = document.querySelector("#Celcius");
+celc.addEventListener("click", showcelcius);
+
+
+//<a href="" class="FtoC" id="fahrenheit">℉ </a>
