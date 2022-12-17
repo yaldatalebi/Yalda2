@@ -40,7 +40,7 @@ function showTemp(response) {
   desc.innerHTML = ` ${descr} `;
   console.log(telorance);
   telorance.innerHTML = `${max}/${mini}℃`;
-  
+
   if (descr === "Clouds") {
     suny.innerHTML = "☁️";
   }
@@ -130,7 +130,6 @@ if (firstday > 6) {
   firstday = firstday - 7;
 }
 sec.innerHTML = `${days[firstday]}`;
-
 
 let third = document.querySelector("#third");
 firstday = firstday + 1;
