@@ -107,43 +107,7 @@ if (hours < 12) {
 let time = document.querySelector("#time");
 time.innerHTML = `${newtime}`;
 
-let day = days[base];
-let today = document.querySelector("#today");
-today.innerHTML = `${day}`;
-let first = document.querySelector("#first");
-let firstday = base + 1;
-if (firstday > 6) {
-  firstday = firstday - 7;
-}
-first.innerHTML = `${days[firstday]}`;
 
-let sec = document.querySelector("#sec");
-firstday = firstday + 1;
-if (firstday > 6) {
-  firstday = firstday - 7;
-}
-sec.innerHTML = `${days[firstday]}`;
-
-let third = document.querySelector("#third");
-firstday = firstday + 1;
-if (firstday > 6) {
-  firstday = firstday - 7;
-}
-third.innerHTML = `${days[firstday]}`;
-
-let forth = document.querySelector("#forth");
-firstday = firstday + 1;
-if (firstday > 6) {
-  firstday = firstday - 7;
-}
-forth.innerHTML = `${days[firstday]}`;
-
-let fifth = document.querySelector("#fifth");
-firstday = firstday + 1;
-if (firstday > 6) {
-  firstday = firstday - 7;
-}
-fifth.innerHTML = `${days[firstday]}`;
 
 function searchlocation(position) {
   let apiKey = "210d99196a88b9257ed8cb3535a0a0c5";
